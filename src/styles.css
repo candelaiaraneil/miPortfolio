@@ -1,0 +1,26 @@
+.fotoperfil {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+    img {
+    width: 90%;
+    height: auto;
+    }
+
+.padd20 {
+    padding: 20px;
+}
+section {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.container {
+    background-color: #fff;
+}
+.sobremi {
+    padding: 20px 0;
+}
+.sobremi div {
+    padding-top: 10px;
+}
