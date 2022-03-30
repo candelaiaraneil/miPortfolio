@@ -8,6 +8,8 @@ import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ExperienciaLaboralComponent } from './componentes/experiencia-laboral/experiencia-laboral.component';
 import { EstudiosRealizadosComponent } from './componentes/estudios-realizados/estudios-realizados.component';
 import { ContactameComponent } from './componentes/contactame/contactame.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ContactameComponent } from './componentes/contactame/contactame.compone
     SobreMiComponent,
     ExperienciaLaboralComponent,
     EstudiosRealizadosComponent,
-    ContactameComponent
+    ContactameComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
