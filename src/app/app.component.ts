@@ -14,8 +14,8 @@ export class AppComponent {
 
   ngOnInit() {
     this.portfolioService.obtenerDatos().subscribe((data) => {
-      this.data = data;
-      console.log(this.data);
+      //this.data = data;
+      console.log(data);
     })
   }
 }
