@@ -1,7 +1,34 @@
 {
-	"Persona": {
-		"fullName": "Candela Iara Neil",
-		"student": "Fullstack Developer Jr.",
-		"mail": "caianeil27@gmail.com"
-    }
-}
+	"id":1,
+	"nombre":"Candela Iara",
+	"apellido":"Neil",
+	"titulo":"Fullstack Developer",
+	"descripcion":"Soy una persona bla bla bla",
+	"fotoPerfil":"assets/imagenes/perfil.jpg",
+	"educacionList":[
+	   {
+		  "idEdu":1,
+		  "tituloEdu":"Argentina Programa - Fullstack Developer",
+		  "fechaEdu":"01/01/2020",
+		  "descEdu":"Aprendí a programar",
+		  "imagenEdu":"https://yt3.ggpht.com/9upo5zbtXzvItj8IMHF1X9hI95x4YOeGCApLk1DhMQCHftmJvf2GWmbJXrC1TKCrn-AyQ2txBw=s900-c-k-c0x00ffffff-no-rj"
+	   }
+	],
+	"skillsList":[
+	   {
+		  "idSkill":1,
+		  "nombreSkill":"Angular",
+		  "fotoSkill":"https://thumbs.dreamstime.com/b/angular-logo-editorial-ilustrativo-sobre-fondo-blanco-eps-descargar-vector-jpeg-banner-ai-208329121.jpg",
+		  "porcentaje":80
+	   }
+	],
+	"experienciaList":[
+	   {
+		  "idExp":1,
+		  "tituloExp":"Coordinadora de Polo Municipal",
+		  "fechaExp":"01/01/2022",
+		  "descExp":"Me encargo de bla bla",
+		  "imagenExp":"https://scontent.faep14-2.fna.fbcdn.net/v/t1.6435-9/66396108_434648307385882_2072452626628214784_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=LFWKdNJzdzUAX_2RnG0&_nc_ht=scontent.faep14-2.fna&oh=00_AT-N_AwfqtApNcOtkcgTPzOYk9TDPctA_vtieIhYwRy10g&oe=62A994CA"
+	   }
+	]
+ }

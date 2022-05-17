@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PortfolioService } from './servicios/portfolio.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mi-primer-portfolio';
+  data: any;
+
+  constructor(private portfolioService: PortfolioService) {}
+
+  ngOnInit() {
+    this.portfolioService.obtenerDatos().subscribe((data) => {
+      this.data = data;
+      console.log(this.data);
+    })
+  }
 }

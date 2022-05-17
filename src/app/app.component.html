@@ -8,10 +8,10 @@
   </head>
   <body>
     <app-navbar></app-navbar>
-    <app-sobre-mi></app-sobre-mi>
-    <app-experiencia-laboral></app-experiencia-laboral>
-    <app-estudios-realizados></app-estudios-realizados>
-    <app-skills></app-skills>
+    <app-sobre-mi [data]="data"></app-sobre-mi>
+    <app-experiencia-laboral [experienciaList]="data.experienciaList"></app-experiencia-laboral>
+    <app-estudios-realizados [educacionList]="data.educacionList"></app-estudios-realizados>
+    <app-skills [skillsList]="data.skillsList"></app-skills>
     <app-contactame></app-contactame>
   </body>
 </html>

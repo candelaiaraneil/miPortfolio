@@ -2,21 +2,19 @@
     <div class="container">
       <div class="row">
         <div class="col col-md-2">
-          <img class="img-fluid" src="assets/imagenes/perfil.jpg" alt="">
+          <img class="img-fluid" src="{{data.fotoPerfil}}" alt="">
         </div>
         <div class="col-md-10 sobremi">
-          <div><b>Nombre: </b>{{miPortfolio.fullName}}</div>
-          <div><b>Estudiante: </b>Fullstack Developer Jr.</div>
-          <div><b>Email: </b>caianeil27@gmail.com</div>
+          <div><b>Nombre: </b> {{data.apellido}}, {{data.nombre}}</div>
+          <div><b>Estudiante: </b>{{data.titulo}}</div>
+          <div><b>Email: </b></div>
         </div>
       </div>
 
       <div class="row padd20">
         <h3>Sobre mí</h3>
         <p>
-          Me gusta aprender y capacitarme constantemente. Elegí profundizar en
-          desarrollo web, desafiar mis límites y comenzar mi carrera como
-          desarrolladora, y Argentina Programa fue un buen punto de partida!
+          {{data.descripcion}}
         </p>
       </div>
     </div>
