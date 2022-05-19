@@ -17,7 +17,7 @@ export class PortfolioService {
   }
 
   public updateUsuario(usuario: Usuario):Observable<Usuario> {
-    return this.http.put<Usuario>(`${this.apiBaseUrl}/update`, usuario);
+    return this.http.put<Usuario>(`${this.apiBaseUrl}/usuario/update`, usuario);
   }
 
 }

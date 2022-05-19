@@ -10,6 +10,7 @@ import { EstudiosRealizadosComponent } from './componentes/estudios-realizados/e
 import { ContactameComponent } from './componentes/contactame/contactame.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
