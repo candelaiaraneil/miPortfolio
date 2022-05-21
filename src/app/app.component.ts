@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Educacion } from './modelos/educacion';
 import { Usuario } from './modelos/usuario';
 import { PortfolioService } from './servicios/portfolio.service';
 
@@ -12,6 +13,7 @@ export class AppComponent {
   public editUsuario: Usuario | undefined;
   title = 'mi-primer-portfolio';
   data: any;
+  public educaciones:Educacion[]=[];
 
 
   constructor(private portfolioService: PortfolioService) {}
@@ -21,5 +23,6 @@ export class AppComponent {
       //this.data = data;
       console.log(data);
     })
+ 
   }
-}
+  }
