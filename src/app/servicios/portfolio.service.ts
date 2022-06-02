@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 import { Educacion } from '../modelos/educacion';
 import { Usuario } from '../modelos/usuario';
 import { Experiencia } from '../modelos/experiencia';
+import { Skills } from '../modelos/skills';
 
 
 @Injectable({
@@ -15,8 +16,8 @@ export class PortfolioService {
 
   constructor(private http:HttpClient) { }
 
-  public obtenerDatos():Observable<Usuario>{
-    return this.http.get<Usuario>(`${this.apiBaseUrl}/usuario/id/1`);
+  public obtenerUsuario(id: number):Observable<Usuario>{
+    return this.http.get<Usuario>(`${this.apiBaseUrl}/usuario/id/${id}`);
   }
 
   public updateUsuario(usuario: Usuario):Observable<Usuario> {
@@ -53,6 +54,22 @@ export class PortfolioService {
 
   public borrarExperiencia(experienciaId: number):Observable<void> {
     return this.http.delete<void>(`${this.apiBaseUrl}/experiencia/borrar/${experienciaId}`);
+  }
+
+  public obtenerSkills():Observable<Skills[]>{
+    return this.http.get<Skills[]>(`${this.apiBaseUrl}/skills/all`);
+  }
+
+  public agregarSkills(skills: Skills):Observable<Skills> {
+    return this.http.post<Skills>(`${this.apiBaseUrl}/skills/agregar`, skills);
+  }
+
+  public updateSkills(skills: Skills):Observable<Skills>{
+    return this.http.put<Skills>(`${this.apiBaseUrl}/skills/update`, skills);
+  }
+
+  public borrarSkills(skillsId: number):Observable<void> {
+    return this.http.delete<void>(`${this.apiBaseUrl}/skills/borrar/${skillsId}`);
   }
   
 

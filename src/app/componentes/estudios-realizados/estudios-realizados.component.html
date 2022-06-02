@@ -4,9 +4,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4" *ngFor="let educacion of educacionList">
-        <div>{{ educacion.tituloEdu }}</div>
-        <img src="{{ educacion.imagenEdu }}" alt="" width="200" height="100" />
-        <div>{{ educacion.fechaEdu }}</div>
+        <div>
+          {{ educacion.tituloEdu }}
+        </div>
+        <div>
+          <img src="{{ educacion.imagenEdu }}" alt="" width="200" height="100" />
+        </div>
+        
+        <div>
+          {{ educacion.fechaEdu }}
+        </div>
         <div>
           {{ educacion.descEdu }}
         </div>

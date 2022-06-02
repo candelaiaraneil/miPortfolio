@@ -9,20 +9,19 @@ import { PortfolioService } from './servicios/portfolio.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public usuario : Usuario | undefined;
+  public usuario: Usuario | undefined;
   public editUsuario: Usuario | undefined;
   title = 'mi-primer-portfolio';
   data: any;
-  public educaciones:Educacion[]=[];
+  public educaciones: Educacion[] = [];
 
 
-  constructor(private portfolioService: PortfolioService) {}
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
-    this.portfolioService.obtenerDatos().subscribe((data) => {
-      //this.data = data;
-      console.log(data);
-    })
- 
+    // this.portfolioService.obtenerDatos().subscribe((data) => {
+    //   //this.data = data;
+    //   console.log(data);
+    // })
   }
-  }
+}

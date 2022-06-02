@@ -2,11 +2,11 @@
     <div class="container">
       <div class="row">
         <div class="col col-md-2">
-          <img class="img-fluid" src="{{data.fotoPerfil}}" alt="">
+          <img class="img-fluid" src="{{usuario?.fotoPerfil}}" alt="">
         </div>
         <div class="col-md-10 sobremi">
-          <div><b>Nombre: </b> {{data.apellido}}, {{data.nombre}}</div>
-          <div><b>Estudiante: </b>{{data.titulo}}</div>
+          <div><b>Nombre: </b> {{usuario?.apellido}}, {{usuario?.nombre}}</div>
+          <div><b>Estudiante: </b>{{usuario?.titulo}}</div>
           <div><b>Email: </b></div>
         </div>
       </div>
@@ -14,7 +14,7 @@
       <div class="row padd20">
         <h3>Sobre mí</h3>
         <p>
-          {{data.descripcion}}
+          {{usuario?.descripcion}}
         </p>
       </div>
     </div>
